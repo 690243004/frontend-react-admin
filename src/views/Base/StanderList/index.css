@@ -1,0 +1,26 @@
+.task-list-item { 
+  display: inline-block;
+  text-align: center;
+  width: 33.33333%;
+  border-right: 1px solid #eee
+}
+.task-list-item:last-child { 
+  border-right: none;
+}
+.task-list-item p { 
+  line-height: 24px;
+}
+.task-list-item h1 { 
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.first-column { 
+  display: flex;
+  line-height: 48px;
+}
+.first-column img { 
+  width: 48px;
+  height: 48px;
+  margin-right:12px;
+}

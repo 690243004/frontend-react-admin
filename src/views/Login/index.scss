@@ -1,0 +1,50 @@
+// 主题色
+$miku-color1 : #39C5BB;
+$miku-color2 : rgb(62,190,211);
+$miku-color3 : rgb(15,71,98);
+$miku-color4 : rgb(34,132,179);
+
+$luka-color : #FFC0CB;
+$len-color : #FFE211;
+$meiko-color : #D80000;
+
+.login-wraper { 
+  width: 100%;
+  height: 100vh;
+  background: $miku-color4;
+  // background-size:400% 400%;
+  // animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title { 
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.login-content { 
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  background: transparent;
+  border-radius: 4px;
+  .ant-form-item { 
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,63 @@
+.md-wraper { 
+  position : absolute;
+  left : 0;
+  right : 0;
+  top : 0;
+  bottom : 0;
+  display: flex;
+}
+
+.md-editer { 
+  flex : 1;
+  border-right: 1px solid #eee;
+  // padding : 10px 0;
+  position: relative;
+}
+
+.md-compiler { 
+  flex : 1;
+  padding :  10px 20px;
+  overflow-y: auto;
+  font-size: 20px;
+}
+
+.md-editer-area { 
+  border: none;
+  width : 100%;
+  padding : 60px 20px 10px;
+  display: block;
+  font-size: 20px;
+  resize:none;
+  color : #000;
+  outline:none; 
+  height: 100%;
+  box-sizing: border-box;
+
+}
+
+.md-editer-action {
+  height: 50px;
+  margin-bottom: 5px;
+  background: #eee;
+  border: 1px solid #ddd;
+  position: absolute;
+  top : 0;
+  left : 0;
+  width: 100%;
+  .md-editer-action-item { 
+    float : left;
+    padding : 0 10px;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s;
+    &:hover{
+      background: #333;
+      color : #fff;
+    }
+    i { 
+      line-height: 50px;
+      font-size: 30px;
+    }
+  }
+}

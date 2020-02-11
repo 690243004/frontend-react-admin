@@ -1,0 +1,16 @@
+.colClass { 
+  margin-bottom:10px;
+}
+.baseDetail-title{
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.colClass span:first-child { 
+  color: #000;
+}
+.colClass span:first-child::after { 
+  content:'：';
+  display: inline-block;
+  margin-left:3px;
+}

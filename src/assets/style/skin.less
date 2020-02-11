@@ -1,0 +1,36 @@
+// css modules 全局样式配置要使用 :global 
+@import './basic.less';
+@import '~antd/dist/antd.less';
+@import './markdown.less';
+.container {
+    background : #fff;
+    position   : relative;
+    overflow   : hidden;
+    height: 100%;
+    padding: 20px 20px 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    &::after { 
+      display: block;
+      height: 20px;
+      content: '';
+      visibility: hidden;
+    }
+    /**
+      container节点下内容超出自身内容大小
+      此时设置了overflow: auto
+      firefox跟IE overflow属性会将超出的部分剪裁到padding edge，所以会出现padding-bottom失效的问题
+      此时会出现padding-bottom 失效的问题
+
+      而在chrom与opera下则不会有这个问题
+    */
+}
+
+
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title { 
+  padding : 0 10px !important;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
