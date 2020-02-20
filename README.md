@@ -33,6 +33,8 @@ npm run build(生产环境构建)
 # 线上地址
 [点击这里跳转]('https://www.zdxhyangyan.cn/example/frontend_react_admin/')
 
+https://www.zdxhyangyan.cn/example/frontend_react_admin/
+
 # 项目特点
 
 - 集成基本表单业务组件
